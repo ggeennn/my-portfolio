@@ -45,6 +45,31 @@
         </p>
     </section>
 
+    <section>
+        <h2>🧩 Prompt 拼接器</h2>
+        <button onclick="openMCPModal()">🔧 打开 MCP Prompt 拼接器</button>
+    </section>
+
+    <div id="mcpModal">
+  <h2>MCP Prompt 拼接器</h2>
+  <textarea id="taskInput" rows="4" placeholder="请输入你的任务目标..."></textarea><br>
+  <button onclick="generatePrompt()">生成 Prompt</button><br><br>
+  <textarea id="outputPrompt" rows="10" readonly></textarea><br>
+  <button onclick="copyPrompt()">复制 Prompt</button>
+  <button onclick="closeMCPModal()">❌ 关闭</button>
+</div>
+
+      
+      <script>
+        function openMCPModal() {
+          document.getElementById('mcpModal').style.display = 'block';
+        }
+        function closeMCPModal() {
+          document.getElementById('mcpModal').style.display = 'none';
+        }
+      </script>
+      <script src="js/mcp-builder.js"></script>
+      
     <footer>
         <p>&copy; 2025 Yicheng Wang | Portfolio Powered by ProjectForge</p>
     </footer>

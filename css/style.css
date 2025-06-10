@@ -30,4 +30,8 @@ body {
     padding: 1em;
     border-radius: 8px;
   }
+  #mcpModal {
+    display:none; position:fixed; top:10%; left:50%; transform:translateX(-50%);
+  background:#fff; border:1px solid #ccc; padding:20px; width:90%; max-width:800px; z-index:1000;
+  }
   
