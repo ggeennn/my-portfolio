@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>ProjectForge 项目介绍</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>ProjectForge</h1>
-        <p>全栈作品集控制系统 · AI Prompt 移植平台</p>
-        <p> <a href="index.html">HOMEPAGE</a></p>
+      <h1>ProjectForge</h1>
+      <p>全栈作品集控制系统 · AI Prompt 移植平台</p>
+      <p><a href="index.html">HOMEPAGE</a></p>
     </header>
 
     <section>
-        <h2>🧠 项目简介</h2>
-        <p>ProjectForge 是我构建的元项目，用于统一管理学习计划、项目开发、AI 提示模板与跨平台上下文。它是我构建所有全栈项目的“控制中枢”。</p>
+      <h2>🧠 项目简介</h2>
+      <p>
+        ProjectForge 是我构建的元项目，用于统一管理学习计划、项目开发、AI
+        提示模板与跨平台上下文。它是我构建所有全栈项目的“控制中枢”。
+      </p>
     </section>
 
     <section>
-        <h2>🎯 项目目标</h2>
-        <ul>
-            <li>系统性规划多个全栈项目</li>
-            <li>生成可复用的 AI Prompt 模板</li>
-            <li>提升跨平台开发连贯性（GPT、Cursor AI、Gemini）</li>
-            <li>支持我申请 WIL 实习职位：Junior Developer / QA Analyst 等</li>
-        </ul>
+      <h2>🎯 项目目标</h2>
+      <ul>
+        <li>系统性规划多个全栈项目</li>
+        <li>生成可复用的 AI Prompt 模板</li>
+        <li>提升跨平台开发连贯性（GPT、Cursor AI、Gemini）</li>
+        <li>支持我申请 WIL 实习职位：Junior Developer / QA Analyst 等</li>
+      </ul>
     </section>
 
     <section>
-        <h2>📁 项目内容展示</h2>
-        <ul>
-            <li><strong>README</strong>：主项目结构与功能说明</li>
-            <li><strong>meta-context.md</strong>：个人背景、目标与技能概览</li>
-            <li><strong>prompt-style.md</strong>：提示词风格与 AI 行为指引</li>
-            <li><strong>context-template.md</strong>：快速移植模板，适配 GPT 系统</li>
-            <li><strong>roadmap.md</strong>：全栈技能成长路线图</li>
-        </ul>
+      <h2>📁 项目内容展示</h2>
+      <ul>
+        <li><strong>README</strong>：主项目结构与功能说明</li>
+        <li><strong>meta-context.md</strong>：个人背景、目标与技能概览</li>
+        <li><strong>prompt-style.md</strong>：提示词风格与 AI 行为指引</li>
+        <li>
+          <strong>context-template.md</strong>：快速移植模板，适配 GPT 系统
+        </li>
+        <li><strong>roadmap.md</strong>：全栈技能成长路线图</li>
+      </ul>
     </section>
 
     <section>
-        <h2>🔗 项目链接</h2>
-        <p>
-            📂 <a href="https://github.com/ggeennn/projectforge" target="_blank">GitHub 仓库</a> <br>
-        </p>
+      <h2>🔗 项目链接</h2>
+      <p>
+        📂
+        <a href="https://github.com/ggeennn/projectforge" target="_blank"
+          >GitHub 仓库</a
+        >
+        <br />
+      </p>
     </section>
 
     <section>
-        <h2>🧩 Prompt 拼接器</h2>
-        <button onclick="openMCPModal()">🔧 打开 MCP Prompt 拼接器</button>
+      <h2>🧩 Prompt 拼接器</h2>
+      <button onclick="openMCPModal()">🔧 打开 MCP Prompt 拼接器</button>
     </section>
 
     <div id="mcpModal">
-  <h2>MCP Prompt 拼接器</h2>
-  <textarea id="taskInput" rows="4" placeholder="请输入你的任务目标..."></textarea><br>
-  <button onclick="generatePrompt()">生成 Prompt</button><br><br>
-  <textarea id="outputPrompt" rows="10" readonly></textarea><br>
-  <button onclick="copyPrompt()">复制 Prompt</button>
-  <button onclick="closeMCPModal()">❌ 关闭</button>
-</div>
+      <h2>MCP Prompt 拼接器</h2>
+      <textarea
+        id="taskInput"
+        rows="4"
+        placeholder="请输入你的任务目标..."
+      ></textarea
+      ><br />
+      <button onclick="generatePrompt()">生成 Prompt</button><br /><br />
+      <textarea id="outputPrompt" rows="10" readonly></textarea><br />
+      <button onclick="copyPrompt()">复制 Prompt</button>
+      <button onclick="closeMCPModal()">❌ 关闭</button>
+    </div>
 
-      
-      <script>
-        function openMCPModal() {
-          document.getElementById('mcpModal').style.display = 'block';
-        }
-        function closeMCPModal() {
-          document.getElementById('mcpModal').style.display = 'none';
-        }
-      </script>
-      <script src="js/mcp-builder.js"></script>
-      
+    <script>
+      function openMCPModal() {
+        document.getElementById("mcpModal").style.display = "block";
+      }
+      function closeMCPModal() {
+        document.getElementById("mcpModal").style.display = "none";
+      }
+    </script>
+    <script src="js/mcp-builder.js"></script>
+
     <footer>
-        <p>&copy; 2025 Yicheng Wang | Portfolio Powered by ProjectForge</p>
+      <p>&copy; 2025 Yicheng Wang | Portfolio Powered by ProjectForge</p>
     </footer>
-</body>
+  </body>
 </html>
